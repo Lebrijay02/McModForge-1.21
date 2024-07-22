@@ -1,6 +1,7 @@
 package net.lebrijay02.lebrijasmod;
 
 import com.mojang.logging.LogUtils;
+import net.lebrijay02.lebrijasmod.item.ModCreativeModeTabs;
 import net.lebrijay02.lebrijasmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -30,6 +31,9 @@ public class LebrijasMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        //add creative tab to mod
+        ModCreativeModeTabs.register(modEventBus);
+        
         //registers items to mod
         ModItems.register(modEventBus);
 
@@ -53,6 +57,9 @@ public class LebrijasMod
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.RAW_CRYSTAL);
+        }
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.CRYSTAL_SWORD);
         }
     }
 

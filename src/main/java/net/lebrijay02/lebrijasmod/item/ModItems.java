@@ -15,6 +15,10 @@ public class ModItems {
     //adds raw crystal to game
     public static final RegistryObject<Item> RAW_CRYSTAL = ITEMS.register("raw_crystal",
             () -> new Item(new Item.Properties()));
+    //adds crystal sword to game
+    public static final RegistryObject<Item> CRYSTAL_SWORD = ITEMS.register("crystal_sword",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
