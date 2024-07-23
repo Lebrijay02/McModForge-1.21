@@ -1,6 +1,7 @@
 package net.lebrijay02.lebrijasmod;
 
 import com.mojang.logging.LogUtils;
+import net.lebrijay02.lebrijasmod.block.ModBlocks;
 import net.lebrijay02.lebrijasmod.item.ModCreativeModeTabs;
 import net.lebrijay02.lebrijasmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -33,9 +34,10 @@ public class LebrijasMod
 
         //add creative tab to mod
         ModCreativeModeTabs.register(modEventBus);
-        
-        //registers items to mod
+
+        //registers items and blocks to mod
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

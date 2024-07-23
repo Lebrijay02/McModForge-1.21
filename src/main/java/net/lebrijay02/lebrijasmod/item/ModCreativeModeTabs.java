@@ -1,6 +1,7 @@
 package net.lebrijay02.lebrijasmod.item;
 
 import net.lebrijay02.lebrijasmod.LebrijasMod;
+import net.lebrijay02.lebrijasmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,6 +22,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_CRYSTAL.get());
                         output.accept(ModItems.CRYSTAL_SWORD.get());
                         output.accept(Items.STRIPPED_MANGROVE_LOG);
+                        output.accept(ModBlocks.CRYSTAL_ORE_BLOCK.get());
+
                     })
                     .build());
 

@@ -1,5 +1,8 @@
 {
   "item.lebrijasmod.raw_crystal" : "Raw Crystal",
   "item.lebrijasmod.crystal_sword" : "Crystal Sword",
+
+  "block.lebrijasmod.crystal_ore_block" : "Crystal Ore Block",
+
   "creativetab.lebrijasmod_tab" : "New Items"
 }
