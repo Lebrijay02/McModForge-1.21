@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "lebrijasmod:crystal_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "lebrijasmod:raw_crystal"
+  }
+}

@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CRYSTAL_SWORD.get());
                         output.accept(Items.STRIPPED_MANGROVE_LOG);
                         output.accept(ModBlocks.CRYSTAL_ORE_BLOCK.get());
+                        output.accept(ModBlocks.CRYSTAL_BLOCK.get());
 
                     })
                     .build());
